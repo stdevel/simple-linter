@@ -37,3 +37,11 @@ Your code has been rated at -10.00/10
   2:1       warning  missing document start "---"  (document-start)
   3:13      error    no new line character at the end of file  (new-line-at-end-of-file)
 ```
+
+You can also use the [`entrypoint.py`](entrypoint.py) script directly and set a working directory or other options:
+
+| Parameter | Description |
+| --------- | ----------- |
+| `-E` / `--exclude` | Excludes particular files (*can be used multiple times*) |
+| `-d` / `--debug` | Enable debugging outputs (*default: no*) |
+| `-l` / `--list` | Only lists files (*default: no*)

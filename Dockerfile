@@ -6,10 +6,10 @@ LABEL maintainer="info@cstan.io"
 RUN apk update && apk add ansible-lint yamllint py3-flake8 py3-pip shellcheck && pip3 install pylint && rm -rf /var/cache/apk
 
 # add entrypoint
-ADD entrypoint.sh /entrypoint.sh
+ADD entrypoint.py /entrypoint.py
 
 # volume configuration
 VOLUME ["/data"]
 
 # run linter
-CMD /entrypoint.sh
+CMD /entrypoint.py
