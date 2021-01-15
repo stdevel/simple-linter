@@ -1,3 +1,5 @@
+![build our image](https://github.com/stdevel/simple-linter/workflows/build%20our%20image/badge.svg)
+
 # simple-linter
 
 Very simple container based on Alpine that runs several linting tools:
